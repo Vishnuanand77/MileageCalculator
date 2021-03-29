@@ -21,13 +21,13 @@
 
     <EditText
         android:id="@+id/KilometersRun"
-        android:layout_width="333dp"
+        android:layout_width="334dp"
         android:layout_height="45dp"
         android:layout_marginStart="39dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="39dp"
         android:ems="10"
-        android:hint="Kilometers your vehicle has run before fuel fill"
+        android:hint="Odometer reading before fuel fill"
         android:inputType="number"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +38,7 @@
     <EditText
         android:id="@+id/DifferenceKms"
         android:layout_width="334dp"
-        android:layout_height="52dp"
+        android:layout_height="45dp"
         android:layout_marginStart="39dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="39dp"
@@ -47,34 +47,32 @@
         android:inputType="number"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/KilometersRun" />
 
     <EditText
         android:id="@+id/FuelInput"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="100dp"
+        android:layout_width="334dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="39dp"
         android:layout_marginTop="20dp"
-        android:layout_marginEnd="101dp"
         android:ems="10"
         android:hint="Fuel filled"
         android:inputType="number"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/DifferenceKms" />
 
     <Button
         android:id="@+id/CalculateBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="163dp"
-        android:layout_marginEnd="160dp"
-        android:layout_marginBottom="54dp"
+        android:layout_width="145dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="40dp"
+        android:background="#14E37D"
         android:text="Calculate Mileage"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -90,4 +88,18 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/MainTitle" />
+
+    <Button
+        android:id="@+id/ResetBtn"
+        android:layout_width="90dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#FF5252"
+        android:text="Reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.562"
+        app:layout_constraintStart_toEndOf="@+id/CalculateBtn" />
 </androidx.constraintlayout.widget.ConstraintLayout>
